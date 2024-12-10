@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Poppins, system-ui, sans-serif;
+    }
+
+    body {
+        background: #1F1D2B;
+        color: white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 0.938rem;
+        line-height: 2rem;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        font-size: 0.875rem;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    input[type='password'] {
+        font-family: sans-serif;
+        letter-spacing: 0.125em;
+    }
+
+    th, td {
+        padding: 16px;
+        font-size: 0.938rem;
+    }
+}
+
+@layer components {
+    .nav-link{
+        @apply text-[16px];
+    }
+
+    .nav-link:hover{
+        @apply text-primary;
+    }
+
+    .active {
+        @apply font-semibold text-primary;
+    }
+
+    .input {
+        @apply block w-full rounded-md border-0 py-2.5 px-4  bg-secondary-light shadow-sm ring-1 ring-inset ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-primary focus:outline-none max-md:text-sm text-[15px] placeholder-gray-400;
+    }
+
+    .btn {
+        @apply px-4 py-2 text-center rounded-lg font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-opacity-75;
+    }
+
+    .btn-primary {
+        @apply bg-primary text-black focus:ring-primary;
+    }
+
+    .btn-primary:hover {
+        @apply bg-primary-dark;
+    }
+
+    .btn-secondary {
+        @apply bg-secondary text-white focus:ring-secondary;
+    }
+
+    .btn-sm {
+        @apply text-sm;
+    }
+}
