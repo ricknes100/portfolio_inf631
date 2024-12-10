@@ -9,7 +9,7 @@ import imgService1 from "../../assets/images/service1.jpg";
 import imgService2 from "../../assets/images/service2.jpg";
 import imgService3 from "../../assets/images/service3.jpg";
 
-import imgProfile from '../../assets/images/photo-profile.jpg';
+import imgProfile from '../../assets/images/photo-profile-2.jpg';
 
 const projects = [
     {
@@ -91,7 +91,7 @@ export const HomePage = () => {
                 </div>
             </section>
             <section className="p-16">
-                <h3 className="text-3xl">Proyectos recientes</h3>
+                <h3 className="text-3xl">Proyectos destacados</h3>
                 <div className="mt-8 grid grid-cols-3 gap-16">
                     {projects.map((item, index) => (
                         <CardProject key={index}
